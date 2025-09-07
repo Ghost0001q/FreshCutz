@@ -17,3 +17,7 @@ function submitBooking(event) {
   event.target.reset();
   return false;
 }
+function toggleMenu() {
+  const navLinks = document.getElementById("nav-links");
+  navLinks.classList.toggle("show");
+}
