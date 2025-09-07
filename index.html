@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FreshCut Barbing Salon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">FreshCut</div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#appointment">Book</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header>
+    <h1>Welcome to FreshCut</h1>
+    <p>Barbing redefined. Style that suits you.</p>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Haircuts</h3>
+        <p>Classic or trendy — tailored to your preference.</p>
+      </div>
+      <div class="service-card">
+        <h3>Beard Trim</h3>
+        <p>Clean and stylish trims by professionals.</p>
+      </div>
+      <div class="service-card">
+        <h3>Shaving</h3>
+        <p>Hot towel shaves for a smooth finish.</p>
+      </div>
+      <div class="service-card">
+        <h3>Coloring</h3>
+        <p>Bold or natural color treatments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Haircut</td><td>$25</td></tr>
+        <tr><td>Beard Trim</td><td>$15</td></tr>
+        <tr><td>Shaving</td><td>$10</td></tr>
+        <tr><td>Hair Coloring</td><td>From $40</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952" alt="Gallery 1">
+      <img src="https://images.unsplash.com/photo-1559599189-95a04fcfcd6b" alt="Gallery 2">
+      <img src="https://images.unsplash.com/photo-1588776814546-ec78c42798c8" alt="Gallery 3">
+      <img src="https://images.unsplash.com/photo-1612209669535-53a99b93e572" alt="Gallery 4">
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial active">
+      “FreshCut always gives me the best cuts. Super professional!”
+      <div class="testimonial-author">– Alex J.</div>
+    </div>
+    <div class="testimonial">
+      “Best salon experience I've ever had. 5 stars!”
+      <div class="testimonial-author">– Nina S.</div>
+    </div>
+    <div class="testimonial">
+      “Beard trims and shaves are always perfect.”
+      <div class="testimonial-author">– Chris W.</div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT FORM -->
+  <section id="appointment">
+    <h2>Book an Appointment</h2>
+    <form onsubmit="return submitBooking(event)">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option value="Haircut">Haircut</option>
+        <option value="Beard Trim">Beard Trim</option>
+        <option value="Shaving">Shaving</option>
+        <option value="Coloring">Hair Coloring</option>
+      </select>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +123 456 7890</p>
+      <p><strong>Email:</strong> info@freshcut.com</p>
+      <p><strong>Address:</strong> 123 Grooming Blvd, BarberTown</p>
+    </div>
+    <iframe src="https://maps.google.com/maps?q=New York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 FreshCut Barbing Salon. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
